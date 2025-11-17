@@ -1,4 +1,17 @@
-listvalues = [-512, -12, 0, 1, 3, 7, 123, 6538, 63910, 991022, 9273514]
+import random
+
+listvalues = []
+
+for negval in range(1, random.randint(2, 10)):
+    negativerandvalues = random.randint(-1000, -1)
+    listvalues.append(negativerandvalues)
+
+for posval in range(1, random.randint(2, 10)):
+    positiverandvalues = random.randint(1, 1000)
+    listvalues.append(positiverandvalues)
+
+for zero in range(0, random.randint(0, 1)):
+    listvalues.append(0)
 
 print(f"Минимальное: {min(listvalues)}")
 print(f"Maксимальное: {max(listvalues)}")
