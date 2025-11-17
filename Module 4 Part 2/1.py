@@ -19,5 +19,3 @@ while True:
 
 	else:
 		print(primerchick+" введен некорректно")
-
-input("")
